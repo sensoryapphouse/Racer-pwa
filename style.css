@@ -1,0 +1,483 @@
+/* By PAWAN JAIN  */
+
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background-color: #005F00;
+    font-family: sans-serif;
+}
+
+/* container for road */
+#container {
+    position: relative;
+    height: 100vh;
+    width: 60%;
+    left: 20%;
+    right: 20%;
+    margin-top: 0px;
+    background-color: #474747;
+    overflow: hidden;
+    border: 0px transparent;
+}
+
+splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/splash.jpg);
+    background-size: 100vw 100vh;
+    background-color: black;
+    opacity: 1.0;
+    z-index: 1002;
+    -webkit-app-region: no-drag;
+}
+
+panel {
+    position: absolute;
+    top: 0vh;
+    left: 150vw;
+    width: 25%;
+    height: 32%;
+    border-radius: 0vh;
+    border: inset;
+    outline: none;
+    background: url(images/panel.png);
+    background-size: 100% 100%;
+    opacity: .9;
+    z-index: 1005;
+    -webkit-app-region: no-drag;
+}
+
+
+settings {
+    position: absolute;
+    top: 2vh;
+    left: 92vw;
+    width: 5vw;
+    height: 6vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/settings.png);
+    background-size: 5vw 6vh;
+    opacity: 0.9;
+    z-index: 1010;
+    -webkit-app-region: no-drag;
+}
+
+home {
+    position: absolute;
+    top: 1vh;
+    left: -10vw;
+    width: 5vw;
+    height: 5vw;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/home.png);
+    background-color: 'white';
+    background-size: 5vw 5vw;
+    opacity: .8;
+    z-index: 1010;
+    -webkit-app-region: no-drag;
+}
+
+home:hover {
+    opacity: 1.0;
+}
+
+button {
+    position: absolute;
+    top: 21.2vh;
+    left: 18.4vw;
+    width: 26vw;
+    height: 27vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/1.png);
+    background-color: #FFFFFF;
+    background-size: 26vw 27vh;
+    opacity: 0.7;
+    z-index: 1003;
+    -webkit-app-region: no-drag;
+}
+
+button:hover {
+    opacity: 1.0;
+}
+
+button1 {
+    position: absolute;
+    top: 21.2vh;
+    left: 59.5vw;
+    width: 26vw;
+    height: 27vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/2.png);
+    background-color: #FFFFFF;
+    background-size: 26vw 27vh;
+    opacity: 0.7;
+    z-index: 1003;
+    -webkit-app-region: no-drag;
+}
+
+button1:hover {
+
+    opacity: 1.0;
+}
+
+button2 {
+    position: absolute;
+    top: 55.5vh;
+    left: 18.4vw;
+    width: 26vw;
+    height: 27vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/3.png);
+    background-color: #FFFFFF;
+    background-size: 26vw 27vh;
+    opacity: 0.7;
+    z-index: 1003;
+    -webkit-app-region: no-drag;
+}
+
+button2:hover {
+    opacity: 1.0;
+}
+
+
+button3 {
+    position: absolute;
+    top: 55.5vh;
+    left: 59.5vw;
+    width: 26vw;
+    height: 27vh;
+    border-radius: 0vh;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: url(images/4.png);
+    background-color: #FFFFFF;
+    background-size: 26vw 27vh;
+    opacity: 0.7;
+    z-index: 1003;
+    -webkit-app-region: no-drag;
+}
+
+button3:hover {
+    opacity: 1.0;
+}
+
+/* <-----------this is line between road----------------------> */
+.line {
+    position: absolute;
+    height: 150px;
+    width: 3%;
+
+    background-color: whitesmoke;
+}
+
+#line_1 {
+    top: -150px;
+    margin-left: 49%;
+}
+
+#line_2 {
+    top: 150px;
+    margin-left: 49%;
+}
+
+#line_3 {
+    top: 450px;
+    margin-left: 49%;
+}
+
+
+/* <----------- this is about car style ------------------> */
+.car {
+    position: absolute;
+    height: 10vh;
+    /*70px; */
+    width: 3vw;
+    /*40px; */
+    border-radius: 15px;
+    /*    box-shadow: 0px 1px 8px 0px black;*/
+}
+
+#car {
+    bottom: 2%;
+    left: 45%;
+    height: 12vh;
+    background-color: red;
+    transform: rotate(0deg);
+}
+
+#car_1 {
+    top: -720px;
+    left: 60%;
+    height: 60px;
+    background-color: steelblue;
+}
+
+#car_2 {
+    top: -650px;
+    left: 30%;
+    height: 70px;
+    background-color: deepskyblue;
+}
+
+#car_3 {
+    top: -550px;
+    left: 37%;
+    height: 80px;
+    background-color: aliceblue;
+}
+
+#car_4 {
+    top: -450px;
+    left: 78%;
+    height: 65px;
+    background-color: powderblue;
+}
+
+
+/* <----------- this is about cars features ------------------> */
+.f_glass {
+    position: absolute;
+    height: 20%;
+    width: 60%;
+    margin-left: 20%;
+    top: 10%;
+    border-radius: 8px 8px 5px 5px;
+    background-color: #c8c8c8;
+}
+
+.b_glass {
+    position: absolute;
+    height: 30%;
+    width: 60%;
+    margin-left: 20%;
+    bottom: 10%;
+    border-radius: 5px 5px 8px 8px;
+    background-color: #888888;
+}
+
+.f_light_l {
+    position: absolute;
+    height: 5%;
+    width: 20%;
+    margin-left: 10%;
+    top: -1.5%;
+    transform: rotate(-45deg);
+    border-radius: 5px 5px 0px 0px;
+    background-color: orangered;
+}
+
+.f_light_r {
+    position: absolute;
+    height: 5%;
+    width: 20%;
+    margin-left: 70%;
+    top: -1.5%;
+    transform: rotate(45deg);
+    border-radius: 5px 5px 0px 0px;
+    background-color: orangered;
+}
+
+.f_tyre_l {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    background-color: black;
+    top: 10%;
+    left: -10%;
+    border-radius: 40%;
+}
+
+.f_tyre_r {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    background-color: black;
+    top: 10%;
+    left: 90%;
+    border-radius: 40%;
+}
+
+.b_tyre_l {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    background-color: black;
+    top: 70%;
+    left: -10%;
+    border-radius: 40%;
+}
+
+.b_tyre_r {
+    position: absolute;
+    height: 20%;
+    width: 20%;
+    background-color: black;
+    top: 70%;
+    left: 90%;
+    border-radius: 40%;
+}
+
+
+
+/* <----------- this is about various div ------------------> */
+
+#score_div {
+    position: absolute;
+    top: 0;
+    margin-top: 0%;
+    margin-left: 0%;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    color: #454545;
+    padding: 10px;
+    box-shadow: 1px 1px 4px 4px #808080;
+
+}
+
+#name_div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    color: #454545;
+    padding: 10px;
+    box-shadow: 1px 1px 4px 4px #808080;
+
+}
+
+#lov_div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    color: red;
+    margin-bottom: 30px;
+
+    padding-left: 10px;
+    box-shadow: 1px 0px 4px 4px #808080;
+}
+
+#lov {
+    font-size: 35px;
+}
+
+/*<------------------ends here -----------------------------------> */
+
+.help {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: white;
+    color: grey;
+    padding: 5px;
+    box-shadow: 1px 0px 4px 4px #808080;
+
+
+}
+
+.small_text {
+
+    font-size: 15px;
+    color: red;
+    font-family: cursive;
+}
+
+#follow {
+    position: absolute;
+    top: 40%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+#follow1 {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+
+}
+
+
+
+
+@media (max-width: 400px) {
+
+    #lov_div {
+        padding: 0;
+        font-size: 15px;
+    }
+
+    #lov {
+        font-size: 15px;
+    }
+
+    #name_div {
+        font-size: 15px;
+        padding: 2px;
+
+    }
+
+    #score_div {
+        position: absolute;
+        top: 0px;
+        margin-left: 0px;
+        padding: 0;
+        font-size: 25px;
+    }
+
+    .help {
+        font-size: 10px;
+    }
+
+    #line_1 {
+        top: -250px;
+        margin-left: 31%;
+    }
+
+    #line_2 {
+        top: 150px;
+        margin-left: 31%;
+    }
+
+    #line_3 {
+        top: 550px;
+        margin-left: 31%;
+    }
+}
